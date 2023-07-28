@@ -20,7 +20,9 @@ $config = [
                 'application/json' => 'yii\web\JsonParser',
             ],
         ],
-        
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager'
+        ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
